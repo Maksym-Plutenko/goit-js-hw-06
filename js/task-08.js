@@ -11,6 +11,8 @@ form.addEventListener('submit', event => {
             [inputPassword.name] : inputPassword.value,
         }
         console.log(obj);
+        inputEmail.value = '';
+        inputPassword.value = '';
     } else {
         alert('Заповніть усі поля!');
     }
